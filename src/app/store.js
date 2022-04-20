@@ -1,8 +1,20 @@
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { configureStore } from '@reduxjs/toolkit'
+import postsReducer from '../features/posts/postsSlice'
+import { loadState, saveState } from './localStorage';
+import throttle from 'lodash.throttle';
+
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    posts: postsReducer
   },
+  preloadedState: loadState()
 });
+
+store.subscribe(
+  throttle( () => {
+  saveState({
+    posts: store.getState().posts
+  }    )},1000),
+  );
+

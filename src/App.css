@@ -1,39 +1,83 @@
-.App {
-  text-align: center;
+h5{
+  color: #313e40  !important;
+  
+}
+.container a{
+  text-decoration: none !important;
+  color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* lay out navbar*/
+
+.navbar{
+  background-color: #5C6F73!important;
+  color: white !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+.navbar button{
+  color:#8FA1A6  !important;
+
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+
+.nav-link{
+  color: white !important;
+  background-color: #5C6F73 ;
+  
+
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.nav-link:hover{
+  background-color: #8FA1A6;
+  
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+/* lay out list*/
+.card{
+  color: inherit;
+  width: 40rem;
+}
+
+.card:hover{
+  background-color: #D9D9D9;
+}
+.card-img{
+  position: relative;
+  width: 100%;     
+  height: 300px;
+  overflow: hidden;
+
+}
+
+.card-img img{
+ position: absolute;
+ max-width: 100%;
+     width: 100%;
+     height: auto;
+}
+
+.page-item a:hover{
+  background-color: #D9D9D9;
+  color: black!important;
+}
+
+/* lay out singe post*/
+.date{
+  font-size: 14px;
+}
+
+.detail-img{
+  max-height: 40rem;
+  width: auto;
+}
+
+.button{
+  background-color: white !important;
+  color: black!important;
+}
+
+.button:hover{
+  background-color: #D9D9D9 !important;
+  color: black!important;
 }
