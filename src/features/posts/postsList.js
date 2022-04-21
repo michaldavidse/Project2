@@ -1,7 +1,7 @@
 import {React, useEffect, useState} from 'react'
 import { useSelector, useDispatch} from 'react-redux'
 import { Link } from 'react-router-dom'
-import Pagination from '../../app/pagination'
+import Pagination from '../../app/components/pagination'
 import { fetchPosts } from './postsSlice'
 
 const Article = ({ post }) => {
@@ -17,7 +17,7 @@ const Article = ({ post }) => {
     <h5 className="card-title"> 
     {post.title}</h5>
     <h6 className="card-subtitle mb-2 fst-italic fw-normal">{post.subtitle}</h6>
-      <p className="card-text">{post.content.substring(0, 100)} </p>
+      <p className="card-text">{post.content.substring(0, 100)}... </p>
       <p> Lees verder</p>
     </div>
   </div>

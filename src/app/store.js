@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit'
 import postsReducer from '../features/posts/postsSlice'
-import { loadState, saveState } from './localStorage';
+import { loadState, saveState } from './components/localStorage';
 import throttle from 'lodash.throttle';
 
 

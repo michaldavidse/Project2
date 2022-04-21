@@ -8,7 +8,7 @@ import {
 
 
 
-import { Navbar } from './app/navbar'
+import { Navbar } from './app/components/navbar'
 import { PostsList } from './features/posts/postsList'
 import AboutMe from './app/aboutMe'
 import { AddPostForm } from './features/posts/addPostForm'
