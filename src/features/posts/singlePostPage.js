@@ -26,6 +26,7 @@ export const SinglePostPage =(props) =>{
     return(
         <section className="post ">
             <h2  className='mt-5 p-2 m-2'>{post.title}</h2>
+            <h3>{post.subtitle}</h3>
             <img src={post.imageUrls[0]} class="card-img-top rounded detail-img " alt="article"/>
 
             <p className="fst-italic date"><i class="fa-solid fa-clock"></i> Aangemaakt op {convertDate(post.articleDates.publicationDate)} - laatst gewijzigd {convertDate(post.articleDates.lastModifiedDate)}</p>
