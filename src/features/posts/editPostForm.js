@@ -22,7 +22,7 @@ export const EditPostForm = (props) =>{
 
     const onSavePostClicked = () =>{
         if(title && content){
-            dispatch(postUpdated({id: postId, title, content}))
+            dispatch(postUpdated({id: postId, title, subtitle, content}))
             navigate(`/posts/${postId}`)
         }
     }
