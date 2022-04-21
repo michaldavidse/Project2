@@ -19,8 +19,9 @@ export const fetchPosts = createAsyncThunk('/posts/fetchPosts',
     ], 
     status:'idle',
     error: null
-
 }
+
+const i= 0
 
 const postsSlice = createSlice({
     name: 'posts',
@@ -31,13 +32,14 @@ const postsSlice = createSlice({
                 state.posts.push(action.payload)
             },
             prepare(title, subtitle, content, userId) {
+                i=i+1;
                 return {
                     payload: {
                         id: nanoid(),
                         title,
                         subtitle,
                         content,
-                        imageUrls: ["https://picsum.photos/200"
+                        imageUrls: ["https://picsum.photos/200/300?random="+i.toString()
                             ],
                         articleDates:{
                              publicationDate: new Date().toISOString(),
@@ -47,6 +49,7 @@ const postsSlice = createSlice({
 
                     }
                 }
+               
             }
         },
 
