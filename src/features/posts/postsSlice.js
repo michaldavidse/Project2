@@ -21,7 +21,7 @@ export const fetchPosts = createAsyncThunk('/posts/fetchPosts',
     error: null
 }
 
-const i= 0
+let i= 0
 
 const postsSlice = createSlice({
     name: 'posts',
