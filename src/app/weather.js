@@ -1,7 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import axios from 'axios'
-import { createPortal } from 'react-dom';
-import { applyMiddleware } from '@reduxjs/toolkit';
 
 export const Weather = () => {
 
